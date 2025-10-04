@@ -1,0 +1,318 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Top bar */
+.top-bar {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #3b241a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar .menu a {
+  margin-left: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .menu a:hover {
+  text-decoration: underline;
+}
+
+.nav-icons .icon {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-icons .insta {
+  color: #e1306c; /* Instagram pink */
+}
+
+.nav-icons .whatsapp {
+  color: #25d366; /* WhatsApp green */
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e65500;
+}
+
+/* Category menu (horizontal scroll or grid) */
+.category-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 25px 10px;
+  background: #fafafa;
+}
+
+.category-item a {
+  padding: 10px 20px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.category-item a:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* Products grid */
+.products {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffecec;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.products .note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Custom section */
+.custom {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.custom h2 {
+  margin-bottom: 20px;
+}
+
+.custom p {
+  margin-bottom: 15px;
+}
+
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #3b241a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #3b241a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+/* Styling for the new image card on sofas.html */
+.product-photo {
+    padding: 0; /* Remove padding for a clean image card */
+    text-align: center;
+    overflow: hidden; /* Ensures image corners match card corners */
+}
+
+.product-photo img {
+    width: 100%;
+    height: auto;
+    /* Optional: Ensure image fills the space but maintains aspect ratio */
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; /* Match top corners to the card's border-radius */
+}
+
+.product-photo p {
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3b241a;
+    background: #fff; /* White background for text area */
+}
+
+/* Ensure the grid is centered on the gallery page */
+.gallery-page {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*==================================
+  5. GALLERY PAGE STYLING (SOFAS.HTML)
+==================================*/
+
+.gallery-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Update the grid for better consistency */
+.grid.gallery-grid { /* Target this specific grid for gallery pages */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly larger min-width for images */
+    gap: 20px;
+    max-width: 1200px; /* Allow wider grid if needed */
+    margin: 0 auto;
+}
+
+
+/* Style for the cards holding images on the gallery page */
+.product-photo {
+    padding: 0; /* Remove padding to allow image to span full width/height of card top */
+    text-align: center;
+    overflow: hidden; /* Crucial: Clips content (image) that exceeds the card's bounds */
+    border-radius: 8px; /* Apply border-radius to the card itself */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Keep shadow on the card */
+    background: #fff; /* White background for the whole card */
+    display: flex; /* Use flexbox to easily stack image and paragraph */
+    flex-direction: column;
+    height: 100%; /* Ensure card takes full height in grid cell */
+}
+
+.product-photo img {
+    width: 100%; /* Image takes 100% width of its parent (.product-photo) */
+    height: 200px; /* <--- **CRITICAL:** Set a fixed height for all images */
+    object-fit: cover; /* <--- **CRITICAL:** Crop image to fit without distortion */
+    border-radius: 8px 8px 0 0; /* Only round top corners if card has rounded corners */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.product-photo img:hover {
+    transform: scale(1.05); /* Slightly zoom on hover */
+    opacity: 0.9;
+}
+
+.product-photo p {
+    padding: 15px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3b241a;
+    background: #fff; /* White background for text area */
+    flex-grow: 1; /* Allows paragraph to take remaining vertical space */
+    display: flex; /* For vertical centering if text is short */
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    border-radius: 0 0 8px 8px; /* Round bottom corners */
+}
+
+/* Existing btn-primary styles... */
+.btn-primary {
+    /* ... existing styles ... */
+    display: inline-block;
+    margin-bottom: 30px; /* <--- ADD THIS LINE to give it space below */
+}
+
+/* Or if only this specific button needs it */
+.gallery-page .btn-primary {
+    margin-bottom: 40px; /* Adjust as needed */
+}
